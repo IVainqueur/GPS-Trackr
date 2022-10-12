@@ -1,13 +1,8 @@
 #include <Arduino.h>
-#include <SoftwareSerial.h>
-#include <GSM_Generic.h>
-#include <GSM_Generic_Main.h>
-#include <GSM_SMS_Generic.h>
-#include <GSMScanner_Generic.h>
+#include <defines.h>
 
-#define PINNUMBER ""
+const char PINNUMBER[] = "";
 
-GSMModem modem;
 GSM gsmAccess = new GSM(true);
 GSM_SMS sms = new GSM_SMS(true);
 GSMScanner scanner = new GSMScanner(true);
