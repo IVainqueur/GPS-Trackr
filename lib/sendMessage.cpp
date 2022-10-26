@@ -92,9 +92,9 @@ void SendSMS()
   Serial.println("Sending SMS..."); // Show this message on serial monitor
   mySerial.print("AT+CMGF=1\r");     // Set the module to SMS mode
   delay(100);
-  mySerial.print("AT+CMGS=\"+250791776092\"\r"); // Your phone number don't forget to include your country code, example +212123456789"
+  mySerial.print("AT+CMGS=\"+250786310931\"\r"); // Your phone number don't forget to include your country code, example +212123456789"
   delay(500);
-  mySerial.print("Turabyanze!!! Jya Nyabarongo!"); // This is the text to send to the phone number, don't make it too long or you have to modify the SoftwareSerial buffer
+  mySerial.print("Hi the coder !!!!!!!!!!!!!!!!!!! it's working "); // This is the text to send to the phone number, don't make it too long or you have to modify the SoftwareSerial buffer
   delay(500);
   mySerial.print((char)26); // (required according to the datasheet)
   delay(500);

@@ -77,7 +77,7 @@
 #endif
 
 #if ESP8266
-// Using Software Serial for ESP8266, as Serial1 is TX only
+// Using Software Serial for ESP8266, as Serial is TX only
 #define GSM_USING_SOFTWARE_SERIAL true
 #else
 // Optional Software Serial here for other boards, but not advised if HW Serial available
@@ -96,8 +96,8 @@ SoftwareSerial swSerial(D7, D8); // (D7, D8, false, 256); // (RX, TX, false, 256
 
 #define SerialGSM swSerial
 #else
-#warning Using default SerialGSM = HardwareSerial Serial1
-#define SerialGSM Serial1
+#warning Using default SerialGSM = HardwareSerial Serial
+#define SerialGSM Serial
 #endif // GSM_USING_SOFTWARE_SERIAL
 
 #warning You must connect the Modem correctly and modify the pins / Serial port here
